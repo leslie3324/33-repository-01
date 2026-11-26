@@ -1,9 +1,10 @@
 # /api/ping
 
-Returns service name and server time.
+Returns the service name and server time. Used by the load balancer health check.
 
-```GET /api/ping
-{"status":"ok","service":"webris-base","time":"..."}
+```http
+GET /api/ping
+{"status":"ok","service":"webris-base","time":"2026-11-26T15:30:00Z"}
 ```
 
-Used by the load balancer health check.
+No authentication required.
